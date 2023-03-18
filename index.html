@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body class="bg-black">
+        <div class="lds-roller position-fixed top-0 start-0 bg-black"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        
+
+        </div>
+        <nav class="navbar  navbar-expand-lg bg-body-secondary pb-0 d-flex align-items-center">
+            <div class="container ">
+                
+                <img src="img/logo.png" class="rounded-circle ">
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+             
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <div>
+                <ul class="navbar-nav text-center ">
+                    <li onclick="search();  " class="nav-link py-2 " >Search</li>
+                    <li onclick="displaycategory(); " class="nav-link py-2 " >Categories</li>
+                    <li onclick="displayarea(); " class="nav-link py-2 " >Area</li>
+                    <li onclick="displayingred(); " class="nav-link py-2  " >Ingredients</li>
+                    <li onclick="contacct(); " class="nav-link py-2  text-nowrap" >Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons ms-auto d-flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+            </div>
+          </nav>
+          <div class="head container-fluid d-flex flex-column justify-content-center align-items-center">
+
+<div class="container pt-5 mx-auto">
+    <div class="row  gy-3  d-flex justify-content-center mb-5 "  id="display2">
+        <div class="col-md-3 ">
+            <input class="form-control bg-transparent text-white " type="text" placeholder="Search By Name" oninput="search1(this.value)">
+        </div>
+        <div class="col-md-3 ">
+                    <input  class="form-control  bg-transparent text-white" type="text" placeholder="Search By first letter" oninput="search2(this.value[0])" maxlength="1">
+                </div>
+   
+    </div>
+    
+</div>
+<div >
+    <h2 class="text-white text-center">what are your favorite food ?</h2>
+</div>
+</div>
+<div class="container pt-5 mx-auto">
+    
+    <div class="row gy-3 gx-3 "  id="display">
+        
+   
+    </div>
+    
+</div>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
